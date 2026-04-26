@@ -15,5 +15,10 @@ public class Hijo extends Padre{
 		return "Defectos: " + getDefectos() + " Virtudes: " + getVirtudes()+" Juguetes: "+juguetes;
 	}
 	
+	@Override
+	public void ahorrar(double monto) {
+		setTotalAhorrado((monto*0.5) + getTotalAhorrado());
+	}
+	
 	
 }
