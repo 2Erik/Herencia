@@ -45,6 +45,7 @@ public class Padre {
 	public void imprimir() {
 		System.out.println("Virtudes: "+virtudes);
 		System.out.println("Defectos: "+defectos);
+		System.out.println("Ahorro: "+totalAhorrado);
 	}
 	
 	//METODO PRIVADO
