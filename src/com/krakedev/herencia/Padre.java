@@ -3,6 +3,7 @@ package com.krakedev.herencia;
 public class Padre {
 	private int defectos;
 	private int virtudes;
+	private double totalAhorrado;
 	
 	//CONSTRUCTOR
 //	public Padre() {
@@ -21,6 +22,14 @@ public class Padre {
 	public void setDefectos(int defectos) {
 		this.defectos = defectos;
 	}
+	public double getTotalAhorrado() {
+		return totalAhorrado;
+	}
+
+	public void setTotalAhorrado(double totalAhorrado) {
+		this.totalAhorrado = totalAhorrado;
+	}
+
 	public int getVirtudes() {
 		return virtudes;
 	}
@@ -44,10 +53,15 @@ public class Padre {
 		System.out.println("Esto es un secreto");
 	}
 	
-	//Override: Nos verifica q llamemos bn la firma del metodo
+	//METODO AHORRAR
+	public void ahorrar(double monto) {
+		totalAhorrado += monto;
+	}
+	
+	//METODO toString
 	@Override
 	public String toString() {
-		return "Padre [defectos=" + defectos + ", virtudes=" + virtudes + "]";
+		return "Padre [defectos=" + defectos + ", virtudes=" + virtudes + ", totalAhorrado=" + totalAhorrado + "]";
 	}
 	
 	
