@@ -10,19 +10,19 @@ public class TestArrayList {
 		// TODO Auto-generated method stub
 		ArrayList<Hija> listaHijas = new ArrayList<Hija>();
 		
-		Hija hija1 = new Hija(1, 5);
+		Hija hija1 = new Hija(1, 5, "Maria");
 		hija1.setDefectos(1);
 		hija1.setVirtudes(5);
 		
 		listaHijas.add(hija1);
 		
-		Hija hija2 = new Hija(2, 6);
+		Hija hija2 = new Hija(2, 6, "Juana");
 		hija2.setDefectos(6);
 		hija2.setVirtudes(2);
 		
 		listaHijas.add(hija2);
 		
-		Hija hija3 = new Hija(3, 8);
+		Hija hija3 = new Hija(3, 8, "Tere");
 		hija3.setDefectos(6);
 		hija3.setVirtudes(2);
 		

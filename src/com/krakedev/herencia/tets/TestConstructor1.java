@@ -8,7 +8,7 @@ public class TestConstructor1 {
 		// TODO Auto-generated method stub
 		
 		//Utiliza el constructor vacio del padre
-		Hija hija = new Hija(10, 3);
+		Hija hija = new Hija(10, 3, "Maria");
 		
 		System.out.println(hija);
 		

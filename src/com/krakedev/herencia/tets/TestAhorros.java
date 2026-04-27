@@ -8,19 +8,20 @@ public class TestAhorros {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Padre padre = new Padre(2, 8);
+		System.out.println("-----PADRE-----");
+		Padre padre = new Padre(2, 8, "Juan");
 		padre.ahorrar(500.5);
-		padre.imprimir();
+		System.out.println(padre);
 		
-		System.out.println("-------------------------");
-		Hija hija = new Hija(8, 2);
+		System.out.println("-----HIJA-----");
+		Hija hija = new Hija(8, 2, "Maria");
 		hija.ahorrar(500.5);
-		hija.imprimir();
+		System.out.println(hija);
 		
-		System.out.println("--------------------------");
-		Hijo hijo = new Hijo(2, 8, 14);
+		System.out.println("-----HIJO-----");
+		Hijo hijo = new Hijo(1, 8, "Pepe", 12);
 		hijo.ahorrar(500.5);
-		hijo.imprimir();
+		System.out.println(hijo);
 		
 	}
 

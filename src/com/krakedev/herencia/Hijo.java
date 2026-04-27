@@ -4,15 +4,16 @@ public class Hijo extends Padre{
 	private int juguetes;
 	
 	//CONSTRUCTOR
-	public Hijo(int defectos, int virtudes, int juguetes) {
-		super(defectos, virtudes);
+	public Hijo(int defectos, int virtudes, String nombre, int juguetes) {
+		super(defectos, virtudes, nombre);
 		this.juguetes = juguetes;
 	}
 	
 	//METODO toString
 	@Override
 	public String toString() {
-		return "Defectos: " + getDefectos() + " Virtudes: " + getVirtudes()+" Juguetes: "+juguetes;
+		return "Nombre: "+getNombre()+"\nDefectos: " + getDefectos() + "\nVirtudes: " + getVirtudes()+"\nJuguetes: "+juguetes
+				+"\nTotal Ahorrado: "+getTotalAhorrado();
 	}
 	
 	@Override

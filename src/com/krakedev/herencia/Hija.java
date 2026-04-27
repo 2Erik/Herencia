@@ -5,8 +5,8 @@ public class Hija extends Padre {
 	
 	//COSTRUCTOR
 	
-	public Hija (int defectos, int virtudes) {
-		super(defectos, virtudes);
+	public Hija (int defectos, int virtudes, String nombre) {
+		super(defectos, virtudes, nombre);
 	}
 
 	// METODO PROPIO DE LA HIJA
@@ -18,7 +18,8 @@ public class Hija extends Padre {
 	// ToString
 	@Override
 	public String toString() {
-		return "Defectos: " + getDefectos() + " Virtudes: " + getVirtudes();
+		return "Nombre: "+getNombre()+"\nDefectos: " + getDefectos() + "\nVirtudes: " + getVirtudes()
+		+"\nTotal Ahorrado: "+getTotalAhorrado();
 	}
 
 }
